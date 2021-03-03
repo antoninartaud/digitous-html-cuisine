@@ -13,39 +13,46 @@
 </head>
 
 <body>
-  <header class="container-fluid bg-image">
-    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
-      <a class="navbar-brand" href="#">Cui'zine</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Accueil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Equipe</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  <header class="home-section">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top mb-3">
+      <div class="container">
+        <a href="#" class="navbar-brand">Cui'zine</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto text-white">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row bg-dark">
-        <div class="d-flex flex-column align-items-center ">
-          <img src="./img/logo_square_white.png" alt="logo cui'zine">
-          <h2 class="text-white">Cui'zine</h2>
-          <h3 class="text-white">Le mag cuisine</h3>
+
+    <div class="dark-overlay">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="d-flex flex-column align-items-center home-content col-lg-4 offset-4 pt-4">
+            <img src="./img/logo_square_white.png" alt="logo cui'zine" class="img-header img-fluid mt-lg-5">
+            <h2>Cui'zine</h2>
+            <h3>Le mag cuisine</h3>
+          </div>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- </header> -->
 
   <div class="container">
 
