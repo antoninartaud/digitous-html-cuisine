@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <title></title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
-    <div class="container d-flex">
+  <header class="container-fluid bg-image">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
       <a class="navbar-brand" href="#">Cui'zine</a>
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Accueil</a>
           </li>
           <li class="nav-item">
@@ -33,8 +35,124 @@
           </li>
         </ul>
       </div>
+    </nav>
+    <div class="container">
+      <div class="row bg-dark">
+        <div class="d-flex flex-column align-items-center ">
+          <img src="./img/logo_square_white.png" alt="logo cui'zine">
+          <h2 class="text-white">Cui'zine</h2>
+          <h3 class="text-white">Le mag cuisine</h3>
+        </div>
+      </div>
     </div>
-  </nav>
+  </header>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center">Derniers articles</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="./img/articles/suzette/suzette-small.jpg" alt="" class="img-thumbnail">
+          </div>
+          <div class="col-lg-6">
+            <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
+            <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans
+              le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au
+              sarrazin!</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="./img/articles/metro/metro-small.jpg" alt="" class="img-thumbnail">
+          </div>
+          <div class="col-lg-6">
+            <h3>Le Métro dessert</h3>
+            <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de
+              réunir
+              leur deux passions dans un restaurant à la déco inspiré du métro parisiens. A voir absolument, mais
+              qu'en est-il d'y aller pour manger ? Clémentine entre en gare et nous donne son avis</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="./img/articles/vitaly/vitaly-small.jpg" alt="" class="img-thumbnail">
+          </div>
+          <div class="col-lg-6">
+            <h3>Vitaly, le végan italien</h3>
+            <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à
+              portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <form>
+          <div class="form-group">
+            <label for="recherche">Recherche</label>
+            <input type="text" class="form-control" placeholder="Recherche" id="recherche" aria-describedby="recherche">
+          </div>
+          <button type="submit" class="btn">Ok</button>
+
+          <div class="form-group">
+            <label for="newsletter">Newsletter</label>
+            <input type="email" class="form-control" placeholder="Email..." id="newsletter">
+          </div>
+          <button type="submit" class="btn">S'inscrire</button>
+        </form>
+        <h5>Partager</h5>
+        <div class="reseaux-icons">
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div class="row">
+        <div class="categories col-lg-4">
+          <h4>
+            Catégories
+          </h4>
+          <ul>
+            <li><a href="#">Revues</a></li>
+            <li><a href="#">Recettes</a></li>
+            <li><a href="#">Découvertes</a></li>
+          </ul>
+        </div>
+        <div class="archives col-lg-4">
+          <h4>
+            Archives
+          </h4>
+          <ul>
+            <li><a href="#">2019</a></li>
+            <li><a href="#">2018</a></li>
+            <li><a href="#">2017</a></li>
+          </ul>
+        </div>
+        <div class="newsletter-reseaux col-lg-4">
+
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <div class="container">
+
+  </div>
+
+
+
+
+
 
 
 
@@ -42,9 +160,10 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+
 </body>
 
 </html>
