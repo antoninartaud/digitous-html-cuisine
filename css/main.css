@@ -1,29 +1,16 @@
-  /* font-family: 'Courgette', cursive;
-  font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 
-
-.navbar{
-  border-bottom: 1px solid rgb(112, 108, 108);
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+.navbar h2 a {
+    font-family: 'Courgette', cursive;
 }
 
-.home-section{
-  background-image: url(./../img/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-attachment: fixed; */
-  min-height: 500px;
-  color: white;
-}
-
-.home-section .dark-overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 500px;
-  background: rgba(0,0,0,0.8);
-}
-
-.img-header{
-  width: 75px;
+p, a {
+    font-family: 'Oswald', sans-serif;
 }
