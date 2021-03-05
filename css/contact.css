@@ -1,8 +1,8 @@
-address{
-  line-height: rem;
-  font-family: 'Oswald', sans-serif;
+address strong{
+  font-family: 'Courgette', cursive;
 }
 
-address > strong{
-  font-family: 'Courgette', cursive;
+address span{
+  font-family: 'Oswald', sans-serif;
+  display: block;
 }
